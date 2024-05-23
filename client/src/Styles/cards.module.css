@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: chocolate;
+  color: #fff;
+  font-size: 26px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 2s ease-in-out;
+}
+
+/* .card:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+} */
+.card:hover {
+  transform: rotateX(180deg);
+}
+
+.card_forvard {
+  /* transform: translateZ(40px); */
+  z-index: 2;
+  transform: rotateX(0deg);
+}
+
+.card_back {
+  /* transform: translateZ(-40px) scale(-1, 1); */
+  transform: rotateX(-180deg);
+}
